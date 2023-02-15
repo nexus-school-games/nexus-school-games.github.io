@@ -144,3 +144,13 @@ ul {
   position: absolute;
   left: 45%;
 }
+
+#description {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  width: 50%;
+  font-size: 1.5vw;
+  text-align: center;
+}
