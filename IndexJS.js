@@ -1,21 +1,21 @@
 function grabQuote() {
   const loadingQuote = document.getElementById('LoadingQuote');
 
-  const settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://quotes15.p.rapidapi.com/quotes/random/",
-    "method": "GET",
-    "headers": {
-      "X-RapidAPI-Key": "eb33b3735emsh6630f59760fd8c3p1fa8d7jsn39ffd81c4dca",
-      "X-RapidAPI-Host": "quotes15.p.rapidapi.com"
-    }
-  };
+	const settings = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://quotes15.p.rapidapi.com/quotes/random/",
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Key": "eb33b3735emsh6630f59760fd8c3p1fa8d7jsn39ffd81c4dca",
+			"X-RapidAPI-Host": "quotes15.p.rapidapi.com"
+		}
+	};
   
   $.ajax(settings).done(function (response) {
-    const author = response["originator"].name
-	const text = response.content
-	loadingQuote.innerHTML = text+'", '+'-'+author
+		const author = response["originator"].name
+		const text = response.content
+		loadingQuote.innerHTML = text+'", '+'-'+author
   });
 }
 
