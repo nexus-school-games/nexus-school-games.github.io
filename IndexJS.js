@@ -15,7 +15,7 @@ function grabQuote() {
   $.ajax(settings).done(function (response) {
     const author = response["originator"].name
     const text = response.content
-	  loadingQuote.innerHTML = '"'+text+'", '+'-'+author
+	  loadingQuote.innerHTML = text+'", '+'-'+author
   });
 }
 
