@@ -154,3 +154,14 @@ ul {
   font-size: 1.5vw;
   text-align: center;
 }
+
+.GameLink {
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-size: 1vw;
+  text-align: center;
+  background-color: rgb(50,50,50)
+}
