@@ -159,9 +159,11 @@ ul {
   width: 15%;
   height: 10%;
   position: absolute;
-  top: 5%;
-  left: 10%;
-  font-size: 1vw;
+  top: 10%;
+  left: 5%;
+  font-size: 1.25vw;
+  text-decoration: none;
   text-align: center;
-  background-color: rgb(50,50,50)
+  background-color: rgb(50,50,50);
+  border-radius: 5px;
 }
